@@ -1,7 +1,11 @@
 QT       += core gui opengl
 
-LIBS += -lOpenGL -lGLU -lGraphicsMagick++ -lGraphicsMagick
+LIBS += -framework OpenGL
+LIBS += -lGraphicsMagick++ -lGraphicsMagick
+LIBS += -L/opt/homebrew/opt/graphicsmagick/lib
 
+INCLUDEPATH += /opt/homebrew/opt/glm/include
+INCLUDEPATH += /opt/homebrew/opt/graphicsmagick/include
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

@@ -1,6 +1,8 @@
 #pragma once
-#include <GL/gl.h>
-#include <GL/glu.h>
+// #include <GL/gl.h>
+// #include <GL/glu.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
 
 #include <QKeyEvent>
 #include <QObject>
@@ -20,12 +22,12 @@ class OGLWidget : public QOpenGLWidget {
   GLdouble _back_frustrum = 5.0;
 
  public:
-  explicit OGLWidget(QWidget *parent = nullptr);
+  explicit OGLWidget(QWidget* parent = nullptr);
   ~OGLWidget() {}
 
-  MainWindow *_view;
+  MainWindow* _view;
 
-  void set_view_pointer(MainWindow *);
+  void set_view_pointer(MainWindow*);
   void set_init(int);
   void set_back_frustrum(GLdouble);
 
@@ -33,9 +35,9 @@ class OGLWidget : public QOpenGLWidget {
   GLdouble get_back_frustrum();
 
   void load_textures();
-  void init_texture(GLuint, QImage &);
+  void init_texture(GLuint, QImage&);
   void init_light();
-  void key_press_event(QKeyEvent *);
+  void key_press_event(QKeyEvent*);
   void load_obj_in_gl();
   void update_view();
 
@@ -53,7 +55,7 @@ class OGLWidget : public QOpenGLWidget {
   void load_model_data();
 
  public slots:
-  void set_view(MainWindow *);
+  void set_view(MainWindow*);
 
  signals:
   void dadam();

@@ -1,6 +1,8 @@
 #pragma once
-#include <GL/gl.h>
-#include <GL/glu.h>
+// #include <GL/gl.h>
+// #include <GL/glu.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
 
 #include <QMainWindow>
 #include <QMouseEvent>
@@ -30,27 +32,27 @@ class MainWindow : public QMainWindow {
   Q_OBJECT
 
  public:
-  Ui::MainWindow *ui;
+  Ui::MainWindow* ui;
 
-  MainWindow(QWidget *parent, s21::Controller *controller);
+  MainWindow(QWidget* parent, s21::Controller* controller);
   ~MainWindow();
 
   void set_lineEdit(QString);
 
-  s21::Controller *get_controller();
-  s21::ListBuilder *get_builder();
+  s21::Controller* get_controller();
+  s21::ListBuilder* get_builder();
   QString get_file_name();
-  Style *get_style_pointer();
-  OGLWidget *get_view();
-  s21::settings_t *get_settings();
+  Style* get_style_pointer();
+  OGLWidget* get_view();
+  s21::settings_t* get_settings();
 
-  GLuint *get_init_list();
-  GLuint *get_poligon_list();
-  GLuint *get_edges_list();
-  GLuint *get_vertices_list();
-  GLuint *get_conversion_list();
-  GLuint *get_settings_list();
-  GLuint *get_conversion_list_mouse();
+  GLuint* get_init_list();
+  GLuint* get_poligon_list();
+  GLuint* get_edges_list();
+  GLuint* get_vertices_list();
+  GLuint* get_conversion_list();
+  GLuint* get_settings_list();
+  GLuint* get_conversion_list_mouse();
 
   GLdouble get_back_frustrum();
 
@@ -108,21 +110,21 @@ class MainWindow : public QMainWindow {
   void make_gif();
 
  protected:
-  virtual void mousePressEvent(QMouseEvent *);
-  virtual void mouseMoveEvent(QMouseEvent *);
+  virtual void mousePressEvent(QMouseEvent*);
+  virtual void mouseMoveEvent(QMouseEvent*);
 
  private:
-  s21::Controller *_controller;
-  ViewSettings *_view_settings;
-  s21::settings_t *_settings;
-  s21::ListBuilder *_builder;
-  QTimer *_paint_timer_right;
-  QTimer *_paint_timer_left;
-  QTimer *timer_save_images;
+  s21::Controller* _controller;
+  ViewSettings* _view_settings;
+  s21::settings_t* _settings;
+  s21::ListBuilder* _builder;
+  QTimer* _paint_timer_right;
+  QTimer* _paint_timer_left;
+  QTimer* timer_save_images;
   GLuint images_for_gif_count;
-  s21::GifMaker *_gif_maker;
+  s21::GifMaker* _gif_maker;
   Style _style;
-  OGLWidget *_draw;
+  OGLWidget* _draw;
   GLdouble _angle = 10.0;
   GLuint _z_max;
   QPoint _first_pos;
