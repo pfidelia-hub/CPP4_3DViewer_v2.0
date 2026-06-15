@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resourses/3d.png</file>
+        <file>resourses/fon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,77 @@
+\input texinfo
+@settitle 3D Viewer v2.0
+
+@copying
+Copyright @copyright{} school 21
+@end copying
+
+@titlepage
+@title 3d viewer 2.0
+@author imagnifi pfidelia
+@page
+@vskip 0pt plus 2filll
+@insertcopying
+@end titlepage
+
+Information about 3DViewer v2.0
+
+The program is designed to visualize 3D objects.
+
+You can select an .obj file containing a list of vertices and faces. Information about their number is displayed under the name of the selected file.
+
+By pressing the buttons, you can
+rotate the object left/right, up/down, move left/right, up/down, forward/backward, return to its original position and make the animation rotate left/right.
+
+The following options are also available: selection of parallel or central projection, selection of background color, edges, vertices, selection of line types and vertices.
+
+Settings are saved between program restarts.
+ 
+The program also allows you to make printscreen and gif-animation.
+
+"3DViewer 2.0"
+
+Программа для визуализации модели в пространстве.
+
+Нажмите кнопку CHOOSE FILE для выбора obj - файла.
+
+После этого произойдет загрузка данных из файла в приложение, в поле (load obj file) отобразится путь
+к выбранному файлу
+В поле (Vertexes count) количество вершин.
+
+В поле рисования будет выведена конечная 3х-мерная модель.
+
+Афинные преобразования
+
+Поворот
+
+Для поворота модели установите соответствующие ползунки в нужные позиции
+
+Сдвиг
+
+Для сдвига модели введите необходимое число в поля X Y Z
+
+Масштабирование
+
+Для измененения масштаба модели можете указать число в поле ввода,
+
+либо нажимать кнопки (+ -) до достижения нужного мастаба.
+
+Сохранение в файл
+
+Нажмите кнопку (SAVE JPEG), чтобы сохранить в файл типа .jpg
+Нажмите кнопку (SAVE BMP), чтобы сохранить в файл типа .bmp
+Нажмите кнопку (SAVE GIF), чтобы сохранить в файл типа .gif
+
+Настройки
+
+Для вызова окна настроек нажмите кнопку (SETTINGS)
+
+В окне настроек можно установить:
+
+тип прекции: параллельную либо центральную
+
+тип линий для отображения ребер: сплошные либо пунктирные
+
+Различные цвета и т.д.
+
+Для сохранения настроек нажмите кнопку (SAVE)
